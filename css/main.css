@@ -675,16 +675,19 @@ blockquote {
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
-  background-image: url(../images/main.jpg);
+  background-image: url(../images/main.jpeg);
 }
+
 .section-inner.start-page-full-width .inner-content .fill-block {
   position: relative;
   height: 100%;
-  min-height: 300px;
+  min-height: 500px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .section-inner.start-page-full-width .hp-text-block {
@@ -3205,6 +3208,10 @@ blockquote p {
 }
 
 @media only screen and (max-width: 480px) {
+  .section-inner.start-page-full-width .inner-content .fill-block {
+    min-height: 300px;
+  }
+  
   .section-title-block.first-style .section-description {
     margin: 7px 0 0;
     width: 100%;
@@ -3467,3 +3474,4 @@ blockquote p {
 }
 /* /Header Copyrights */
 /* /v2.2 - 26 October 2018 */
+
